@@ -1,0 +1,42 @@
+.login-form {
+    max-width: 300px;
+  }
+
+  .login-form-margin {
+    margin-bottom: 16px;
+  }
+
+  .login-form-forgot {
+    float: right;
+  }
+
+  .login-form-button {
+    width: 50%;
+  }
+
+
+  textarea{
+    margin: 0px;
+    padding:3px;
+    border: 1px solid #d9d9d9;
+     width: 301px ; 
+     height: 91px;
+}
+textarea:hover{
+    border-color: #40a9ff;
+}
+textarea:focus{
+    border-color: #40a9ff;
+    outline: none !important;
+    border:1px solid #40a9ff;
+    box-shadow: 0 0 2px #40a9ff;
+}
+textarea::placeholder{
+    color:#d9d9d9;
+}
+
+.btn-sub{
+    color: #fff;
+    background: #096dd9;
+    border-color: #096dd9;
+}

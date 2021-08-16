@@ -1,0 +1,8 @@
+
+::ng-deep.ant-card-head { background:#c5dafc;}
+
+textarea{
+    width:250px;
+    padding: 0;
+    border: 1px solid #ccc;
+}

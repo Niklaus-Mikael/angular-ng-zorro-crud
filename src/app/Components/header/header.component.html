@@ -1,0 +1,37 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <a class="navbar-brand mar" routerLink="/">Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav  mar">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="">Posts</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Controls
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/controls/button">Buttons</a></li>
+            <li><a class="dropdown-item" href="/controls/switch">Switches</a></li>
+            <li><a class="dropdown-item" href="/controls/grid">Grids</a></li>
+            <li><a class="dropdown-item" href="/controls/table">Tables</a></li>
+            <li><a class="dropdown-item" href="/controls/form">Forms</a></li>
+            <li><a class="dropdown-item" href="/controls/tree">Trees</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-success" (click)="showModal()">Add</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nz-modal [(nzVisible)]="isVisible" nzTitle="Add New Todo" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+    <ng-container *nzModalContent>
+      <app-form (onSubmitTodo)="addTodo($event)"></app-form>
+    </ng-container>
+  </nz-modal>

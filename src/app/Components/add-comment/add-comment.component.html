@@ -1,0 +1,17 @@
+<form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Please input your username!">
+        <nz-form-label [nzSpan]="7"> User Name</nz-form-label>
+        <nz-input-group nzPrefixIcon="user">
+          <input type="text" nz-input formControlName="userName" placeholder="Username"/>
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label [nzSpan]="7" >Comment</nz-form-label>
+        <nz-form-control nzErrorTip="Please write something here!">
+            <textarea formControlName="comment"  name="commet" rows="5" placeholder="Add your comment here!"></textarea>
+        </nz-form-control>
+      </nz-form-item>
+    <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Add Comment</button>
+  </form>

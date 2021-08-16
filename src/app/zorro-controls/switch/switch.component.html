@@ -1,0 +1,52 @@
+    
+                <div style="background: #ECECEC;padding:30px;">
+                    <div nz-row [nzGutter]="8">
+                      <div nz-col [nzSpan]="12">
+                        <nz-card nzTitle="Basic Switch">
+                            <nz-switch></nz-switch>
+                
+                        </nz-card>
+                        </div>
+                        </div>
+                        </div>
+
+                            
+                <div style="background: #ECECEC;padding:30px;">
+                    <div nz-row [nzGutter]="8">
+                      <div nz-col [nzSpan]="12">
+                        <nz-card nzTitle="Switch with disable">
+                            <nz-switch [(ngModel)]="switchValue" [nzDisabled]="isDisabled"></nz-switch>
+                            <br />
+                            <br />
+                            <button nz-button [nzType]="'primary'" (click)="isDisabled = !isDisabled">Toggle disabled</button>
+                          
+                
+                        </nz-card>
+                        </div>
+                        </div>
+                        </div>
+
+                            
+                <div style="background: #ECECEC;padding:30px;">
+                    <div nz-row [nzGutter]="8">
+                      <div nz-col [nzSpan]="12">
+                        <nz-card nzTitle="Switch with Text">
+                            <nz-switch [ngModel]="true" nzCheckedChildren="开" nzUnCheckedChildren="关"></nz-switch>
+                            <br />
+                            <br />
+                            <nz-switch [ngModel]="false" nzCheckedChildren="1" nzUnCheckedChildren="0"></nz-switch>
+                            <br />
+                            <br />
+                            <nz-switch
+                              [ngModel]="true"
+                              [nzCheckedChildren]="checkedTemplate"
+                              [nzUnCheckedChildren]="unCheckedTemplate"
+                            ></nz-switch>
+                            <ng-template #checkedTemplate><i nz-icon nzType="check"></i></ng-template>
+                            <ng-template #unCheckedTemplate><i nz-icon nzType="close"></i></ng-template>
+                          
+                
+                        </nz-card>
+                        </div>
+                        </div>
+                        </div>

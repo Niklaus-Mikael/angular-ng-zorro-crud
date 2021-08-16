@@ -1,0 +1,46 @@
+<div style="background: #ECECEC;padding:30px;">
+    <div nz-row [nzGutter]="8">
+      <div nz-col [nzSpan]="12">
+        <nz-card nzTitle="Basic Tree">
+
+            <nz-tree
+            #nzTreeComponent
+            [nzData]="nodes"
+            nzCheckable
+            [nzCheckedKeys]="defaultCheckedKeys"
+            [nzExpandedKeys]="defaultExpandedKeys"
+            [nzSelectedKeys]="defaultSelectedKeys"
+            (nzClick)="nzClick($event)"
+            (nzContextMenu)="nzClick($event)"
+            (nzCheckBoxChange)="nzCheck($event)"
+            (nzExpandChange)="nzCheck($event)"
+          ></nz-tree>
+          
+        </nz-card>
+        </div>
+        </div>
+        </div>
+
+        <div style="background: #ECECEC;padding:30px;">
+            <div nz-row [nzGutter]="8">
+              <div nz-col [nzSpan]="12">
+                <nz-card nzTitle="Basic Tree">
+        
+        
+                </nz-card>
+                </div>
+                </div>
+                </div>
+
+                
+                <div style="background: #ECECEC;padding:30px;">
+                    <div nz-row [nzGutter]="8">
+                      <div nz-col [nzSpan]="12">
+                        <nz-card nzTitle="Basic Tree">
+                
+                
+                        </nz-card>
+                        </div>
+                        </div>
+                        </div>
+                
