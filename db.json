@@ -326,5 +326,10 @@
       "body": "commented",
       "id": 47
     }
-  ]
+  ],
+  "auth":{
+    "username":"admin",
+    "password":"admin",
+    "token":"1234567890"
+  }
 }

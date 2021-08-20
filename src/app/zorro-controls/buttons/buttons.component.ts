@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-buttons',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit(): void {
   }
@@ -26,6 +28,11 @@ export class ButtonsComponent implements OnInit {
     setTimeout(() => {
       this.isLoadingTwo = false;
     }, 5000);
+  }
+
+  logout(){
+    localStorage.clear();
+    this.route.navigateByUrl("login");
   }
 
 }

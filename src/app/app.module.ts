@@ -25,6 +25,7 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzPaginationModule } from 'ng-zorro-antd/pagination';
 import {ZorroControlsModule} from  './zorro-controls/zorro-controls.module';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -37,6 +38,7 @@ registerLocaleData(en);
     FormComponent,
     AddCommentComponent,
     ShowComponent,
+    LoginComponent,
 
   ],
   imports: [
